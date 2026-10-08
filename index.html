@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090b12">
+<meta name="description" content="BladeArena — a fan-made spinning-top battle hub with a collection and scoreboard.">
+<title>BladeArena — Let It Rip!</title>
+<style>
+:root{--bg:#090b12;--panel:#121521;--line:#2a2e40;--red:#ff3548;--muted:#a7adbd;--white:#f7f8fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button{font:inherit;cursor:pointer;border:1px solid #3a4055;border-radius:10px;padding:11px 15px;background:#191d2b;color:white;font-weight:750;transition:.18s}button:hover{border-color:var(--red);transform:translateY(-1px)}button:focus-visible,a:focus-visible{outline:3px solid #ff7180;outline-offset:3px}.primary{background:var(--red);border-color:var(--red);color:white}.wrap{width:min(1050px,100% - 36px);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:20px 0;border-bottom:1px solid var(--line)}.logo{font-weight:1000;font-size:22px;letter-spacing:-1px}.logo span{color:var(--red)}.navlinks{display:flex;gap:8px;flex-wrap:wrap}.navlinks a{color:#d9dce7;text-decoration:none;font-size:13px;padding:9px}.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:25px;padding:58px 0 45px}.eyebrow{font-size:12px;letter-spacing:2.5px;color:#ff6371;font-weight:900}.hero h1{font-size:clamp(48px,8vw,82px);line-height:.92;letter-spacing:-4px;margin:17px 0}.hero h1 span{color:var(--red)}.lead{color:var(--muted);line-height:1.8;max-width:470px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.arena{min-height:300px;display:grid;place-items:center;position:relative;overflow:hidden;border:1px solid #35394d;border-radius:20px;background:radial-gradient(ellipse at center,#29223d,#10121c 65%)}.ring{width:205px;height:205px;border-radius:50%;border:10px solid #484b60;box-shadow:0 0 0 8px #181b28,0 0 0 10px #6a2938,0 0 45px #fa344944;display:grid;place-items:center;transform:perspective(300px) rotateX(18deg)}.topper{width:140px;height:140px;border-radius:50%;background:conic-gradient(#ff3449 0 45deg,#ff9a39 45deg 90deg,#ffdc56 90deg 135deg,#f3f4ff 135deg 180deg,#4edcff 180deg 225deg,#445dff 225deg 270deg,#a44dff 270deg 315deg,#ff3449 315deg);border:7px solid #dbe1ef;box-shadow:inset 0 0 0 8px #25283a,0 0 22px #ff405966;display:grid;place-items:center}.core{width:38px;height:38px;border-radius:50%;background:#171923;border:5px solid #e6e9f3;box-shadow:0 0 12px white}.spin{animation:spin .45s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.arena-caption{position:absolute;bottom:15px;font-size:10px;letter-spacing:3px;color:#b6bbcc}.section{padding:20px 0 15px}.section h2{font-size:27px;letter-spacing:-.7px;margin:10px 0}.sub{color:var(--muted);font-size:14px;line-height:1.7}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:16px;min-width:0}.art{height:135px;display:grid;place-items:center;border-radius:10px;background:radial-gradient(ellipse,#292c3e,#161824)}.mini{width:86px;height:86px;border-radius:50%;border:6px solid #d9dfed;box-shadow:inset 0 0 0 7px #171925,0 0 18px #ffffff18;display:grid;place-items:center}.mini:after{content:"";width:27px;height:27px;border-radius:50%;border:5px solid #f4f4f7;background:#171925}.name{font-weight:900;margin-top:13px}.tag{display:inline-block;margin-top:8px;font-size:10px;font-weight:900;letter-spacing:1px;color:#ff6571;background:#401b27;padding:5px 7px;border-radius:5px}.card p{font-size:13px}.scorebox{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:20px;border-radius:15px;text-align:center;margin-top:18px}.score{font-size:48px;font-weight:950;font-variant-numeric:tabular-nums}.scorelabel{font-size:12px;color:var(--muted);margin-bottom:8px}.score-actions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.log{color:var(--muted);font-size:13px;line-height:1.7;min-height:24px;margin-top:12px}.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.rule{padding:16px;border-radius:12px;background:#151824;border:1px solid var(--line)}.rule b{display:block;margin-bottom:7px}.rule p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}.footer{border-top:1px solid var(--line);margin-top:38px;padding:22px 0 30px;color:#9299aa;font-size:12px;line-height:1.8}.footer a{color:#d9dce7}@media(max-width:650px){.hero{grid-template-columns:1fr;padding-top:35px}.hero h1{letter-spacing:-2px}.arena{min-height:260px}.cards{grid-template-columns:1fr}.card{display:grid;grid-template-columns:110px 1fr;gap:12px;align-items:center}.art{height:110px}.name{margin-top:0}.rules{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}.wrap{width:min(100% - 28px,1050px)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="nav">
+  <div class="logo">BLADE<span>ARENA</span> ⚡</div>
+  <nav class="navlinks" aria-label="Main navigation"><a href="#collection">Collection</a><a href="#battle">Battle Zone</a><a href="#basics">Battle Basics</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div><div class="eyebrow">YOUR NEXT BATTLE STARTS HERE</div><h1>LET IT<br><span>RIP!</span></h1><p class="lead">Choose your blade. Enter the arena. Prove your skills. Welcome to your spinning-top battle headquarters.</p><div class="actions"><a href="#battle"><button class="primary">ENTER THE ARENA ⚔</button></a><a href="#collection"><button>Explore Blades ↓</button></a></div></div>
+  <div class="arena" aria-label="Animated spinning-top illustration"><div class="ring"><div class="topper" id="hero-top"><div class="core"></div></div></div><div class="arena-caption">SPIN • STRIKE • SURVIVE</div></div>
+</section>
+<section class="section" id="collection"><div class="eyebrow">PICK YOUR FIGHTER</div><h2>⚡ Blade Collection</h2><p class="sub">Three fan-made blade concepts. Which style fits your battle strategy?</p>
+<div class="cards">
+  <article class="card"><div class="art"><div class="mini" style="background:conic-gradient(#ff3348,#ffb13b,#ff3348,#7e1729,#ff3348)"></div></div><div><div class="name">Inferno Fang</div><span class="tag">ATTACK</span><p class="sub">Fast and aggressive, designed for bold strikes.</p></div></article>
+  <article class="card"><div class="art"><div class="mini" style="background:conic-gradient(#36cfff,#425cff,#c9f7ff,#1747a7,#36cfff)"></div></div><div><div class="name">Frost Vortex</div><span class="tag" style="color:#6cddff;background:#112d42">DEFENSE</span><p class="sub">A steady defender that holds its ground.</p></div></article>
+  <article class="card"><div class="art"><div class="mini" style="background:conic-gradient(#ffe76b,#4cffb0,#13a875,#ffed70,#d78d27)"></div></div><div><div class="name">Solar Phantom</div><span class="tag" style="color:#ffe66b;background:#39321a">STAMINA</span><p class="sub">Built around the idea of lasting spin power.</p></div></article>
+</div></section>
+<section class="section" id="battle"><div class="eyebrow">FRIEND VS FRIEND</div><h2>🏆 Battle Scoreboard</h2><p class="sub">Use the buttons to track a friendly match. First player to 5 points wins.</p>
+<div class="scorebox"><div><div class="scorelabel">PLAYER 1</div><div class="score" id="score-a" aria-live="polite">0</div><div class="score-actions"><button onclick="addPoint('a')">+ Point</button></div></div><div style="font-size:14px;font-weight:950;color:#ff3548">VS</div><div><div class="scorelabel">PLAYER 2</div><div class="score" id="score-b" aria-live="polite">0</div><div class="score-actions"><button onclick="addPoint('b')">+ Point</button></div></div></div>
+<div class="actions"><button class="primary" onclick="startSpin()">⚡ Spin the Blade</button><button onclick="resetScore()">Reset Match</button></div><div class="log" id="battle-log" role="status">The arena is ready. Who will win?</div>
+</section>
+<section class="section" id="basics"><div class="eyebrow">PLAY FAIR</div><h2>📘 Battle Basics</h2><div class="rules"><div class="rule"><b>01 · Launch</b><p>Get your launcher ready and release your top into a suitable stadium.</p></div><div class="rule"><b>02 · Outspin</b><p>See whose top keeps spinning longer or wins under your agreed rules.</p></div><div class="rule"><b>03 · Celebrate</b><p>Track the score, respect your opponent, and enjoy the match.</p></div></div></section>
+</main>
+<footer class="footer">BLADEARENA · Fan-made concept for spinning-top fans.<br>This is an unofficial fan project and is not affiliated with or endorsed by the owners of the Beyblade brand. Blade names shown here are fictional concepts.</footer>
+</div>
+<script>
+let playerA=0,playerB=0,matchOver=false;
+function addPoint(player){
+ if(matchOver){document.getElementById('battle-log').textContent='The match is over. Reset the match to play again.';return;}
+ if(player==='a')playerA++;else playerB++;
+ document.getElementById('score-a').textContent=playerA;
+ document.getElementById('score-b').textContent=playerB;
+ if(playerA>=5||playerB>=5){matchOver=true;document.getElementById('battle-log').textContent='🏆 '+(playerA>playerB?'Player 1':'Player 2')+' wins the match! Reset to play again.';}
+ else document.getElementById('battle-log').textContent=(player==='a'?'Player 1':'Player 2')+' scores a point!';
+}
+function resetScore(){playerA=0;playerB=0;matchOver=false;document.getElementById('score-a').textContent='0';document.getElementById('score-b').textContent='0';document.getElementById('battle-log').textContent='New match! Ready, set, let it rip!';}
+function startSpin(){const top=document.getElementById('hero-top');top.classList.remove('spin');void top.offsetWidth;top.classList.add('spin');document.getElementById('battle-log').textContent='🔥 Blades launched! Award a point to the winner.';setTimeout(()=>top.classList.remove('spin'),5000);}
+</script>
+</body>
+</html>
